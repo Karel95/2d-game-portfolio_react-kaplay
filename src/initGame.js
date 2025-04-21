@@ -14,12 +14,8 @@ export default async function initGame() {
   const generalData = await (await fetch("./configs/generalData.json")).json();
   const skillsData = await (await fetch("./configs/skillsData.json")).json();
   const socialsData = await (await fetch("./configs/socialsData.json")).json();
-  const experiencesData = await (
-    await fetch("./configs/experiencesData.json")
-  ).json();
-  const projectsData = await (
-    await fetch("./configs/projectsData.json")
-  ).json();
+  const experiencesData = await ( await fetch("./configs/experiencesData.json")).json();
+  const projectsData = await ( await fetch("./configs/projectsData.json")).json();
 
   const k = makeKaplayCtx();
   k.loadSprite("player", "./sprites/player.png", {
